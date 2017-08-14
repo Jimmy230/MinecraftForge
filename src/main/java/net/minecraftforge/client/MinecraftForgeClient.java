@@ -17,7 +17,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-package net.minecraftforge.client;
+package com.minecraftforge.minecraft
 
 import java.util.BitSet;
 import java.util.Locale;
@@ -85,7 +85,7 @@ public class MinecraftForgeClient
      *
      * @param bit The bit from {@link #reserveStencilBit()}
      */
-    public static void releaseStencilBit(int bit)
+    private static void releaseStencilBit(int bit)
     {
         if (bit >= 0 && bit < stencilBits.length())
         {
